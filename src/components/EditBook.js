@@ -60,7 +60,6 @@ export default function EnterBook() {
 function EditBookData({ book }) {
   const navigate = useNavigate();
 
-
   // formik is used to set initital values, to validate and add the new author data to the api as crud operations
   // also navigating to books list component
   const formik = useFormik({
@@ -85,9 +84,9 @@ function EditBookData({ book }) {
   return (
     <form
       onSubmit={formik.handleSubmit}
-      className="container mt-5 d-flex flex-column text-center"
+      className="container mt-5 d-flex flex-column"
     >
-      <h1>EDIT BOOK DATA</h1>
+      <h1 className="text-center">EDIT BOOK DATA</h1>
       <TextField
         type="text"
         id="outlined-basic title"

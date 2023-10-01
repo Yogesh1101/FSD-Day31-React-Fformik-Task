@@ -60,9 +60,9 @@ function AddBook() {
   return (
     <form
       onSubmit={formik.handleSubmit}
-      className="container mt-5 d-flex flex-column text-center"
+      className="container mt-5 d-flex flex-column"
     >
-      <h1>ADD NEW BOOK DATA</h1>
+      <h1 className="text-center">ADD NEW BOOK DATA</h1>
       <TextField
         type="text"
         id="outlined-basic title"

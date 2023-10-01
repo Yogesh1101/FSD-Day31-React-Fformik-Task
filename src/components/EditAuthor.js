@@ -77,9 +77,9 @@ function EditAuthorData({ author }) {
   return (
     <form
       onSubmit={formik.handleSubmit}
-      className="container mt-5 d-flex flex-column text-center"
+      className="container mt-5 d-flex flex-column"
     >
-      <h1>EDIT AUTHOR DATA</h1>
+      <h1 className="text-center">EDIT AUTHOR DATA</h1>
       <TextField
         type="text"
         id="outlined-basic name"
